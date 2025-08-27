@@ -32,9 +32,12 @@ while boolean:
 
     elif choice == 4:
         find_word = input("Enter the word to find: ")
-        replace_word = input("Enter the word to replace it with: ")
-        sentence = sentence.replace(find_word, replace_word)
-        print("Updated sentence:", sentence)
+        if find_word not in sentence.split():
+                print("Word not found")
+        else:
+            replace_word = input("Enter the word to replace it with: ")
+            sentence = sentence.replace(find_word, replace_word)
+            print("Updated sentence:", sentence)
 
     elif choice == 5:
         print("Title case:", sentence.title())
