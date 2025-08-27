@@ -1,0 +1,4 @@
+Odd numbers: 1
+Even numbers: 1
+Zero numbers: 1
+Negative numbers: 1
